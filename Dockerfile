@@ -3,4 +3,4 @@ RUN apk-install haproxy
 EXPOSE 80
 EXPOSE 8080
 VOLUME /etc/haproxy
-CMD ["haproxy", "-f", "/etc/haproxy/haproxy.cfg"]
+CMD ["haproxy", "-d", "-f", "/etc/haproxy/haproxy.cfg"]
